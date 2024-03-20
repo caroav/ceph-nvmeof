@@ -619,7 +619,8 @@ jobs:
         run: |
           make down
           make clean
- atom:
+ 
+  atom:
     needs: [build, build-ceph]
     runs-on: ibmcloud-1
     steps:
